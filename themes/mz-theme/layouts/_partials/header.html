@@ -1,2 +1,16 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="container">
+    <div class="header-content">
+        <div class="logo">
+            <a href="{{ "/" | relURL }}">
+                <img src="{{ "images/logo.png" | relURL }}" alt="{{ site.Title }}" class="logo-img">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                {{- range site.Menus.main }}
+                <li><a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a></li>
+                {{- end }}
+            </ul>
+        </nav>
+    </div>
+</div>
