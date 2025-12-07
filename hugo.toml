@@ -1,0 +1,38 @@
+baseURL = 'https://medienzentrum-giessen-vogelsberg.de/'
+languageCode = 'de-de'
+title = 'Medienzentrum Gießen-Vogelsberg'
+theme = 'mz-theme'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = 'Ihr Partner für digitale Bildung und Medienverleih'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'Edupool'
+    url = '/edupool/'
+    weight = 2
+  [[menu.main]]
+    name = 'Fortbildungen'
+    url = '/fortbildungen/'
+    weight = 3
+  [[menu.main]]
+    name = 'Verleih'
+    url = '/verleih/'
+    weight = 4
+  [[menu.main]]
+    name = 'MINT-Space'
+    url = '/mint-space/'
+    weight = 5
+  [[menu.main]]
+    name = 'Blog'
+    url = '/blog/'
+    weight = 6

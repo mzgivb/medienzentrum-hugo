@@ -1,0 +1,180 @@
+{{ define "title" }}{{ .Site.Title }} - {{ .Site.Params.description }}{{ end }}
+
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero-landing">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-badge">🎓 Digitale Bildung für die Zukunft</span>
+            <h1 class="hero-title">Ihr Partner für <span class="gradient-text">moderne Bildung</span></h1>
+            <p class="hero-description">Entdecken Sie innovative Lernmethoden, digitale Medien und praktische Maker-Projekte für Ihren Unterricht im Medienzentrum Gießen-Vogelsberg</p>
+            <div class="hero-buttons">
+                <a href="https://hessen.edupool.de/home?standort=16" class="btn btn-primary btn-large" target="_blank">
+                    <span>Zum Edupool</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="{{ "fortbildungen" | relURL }}" class="btn btn-secondary btn-large">Fortbildungen ansehen</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Digitale Medien</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Fortbildungen pro Jahr</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Schulen im Netzwerk</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-highlight">
+    <div class="container">
+        <div class="section-header-centered">
+            <span class="section-badge">Warum wir?</span>
+            <h2>Alles für erfolgreichen digitalen Unterricht</h2>
+            <p>Von der Medienausleihe bis zur professionellen Fortbildung – wir unterstützen Sie auf jedem Schritt</p>
+        </div>
+
+        <div class="features-grid-large">
+            <div class="feature-card feature-card-large">
+                <div class="feature-card-icon">📚</div>
+                <h3>Edupool</h3>
+                <p>Tausende Lehrfilme, interaktive Materialien und Tools wie Tutory für die Arbeitsblatt-Erstellung. Alles an einem Ort, immer verfügbar.</p>
+                <ul class="feature-list">
+                    <li>✓ Über 5.000 Medien online verfügbar</li>
+                    <li>✓ H5P-Inhalte selbst erstellen</li>
+                    <li>✓ Arbeitsblätter mit Tutory</li>
+                </ul>
+                <a href="https://hessen.edupool.de/home?standort=16" class="feature-link" target="_blank">Mehr erfahren →</a>
+            </div>
+
+            <div class="feature-card feature-card-large">
+                <div class="feature-card-icon">🎓</div>
+                <h3>Fortbildungen</h3>
+                <p>Erweitern Sie Ihre digitalen Kompetenzen mit unseren praxisorientierten Schulungen zu KI, Medienkompetenz und digitalen Tools.</p>
+                <ul class="feature-list">
+                    <li>✓ Über 200 Fortbildungen jährlich</li>
+                    <li>✓ Praxisnahe Workshops</li>
+                    <li>✓ Individuelle Schulungen</li>
+                </ul>
+                <a href="{{ "fortbildungen" | relURL }}" class="feature-link">Termine ansehen →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Grid -->
+<section class="services-modern">
+    <div class="container">
+        <div class="section-header-centered">
+            <span class="section-badge">Unsere Services</span>
+            <h2>Medien, Geräte & Maker-Space</h2>
+        </div>
+
+        <div class="services-grid-modern">
+            <div class="service-card-modern">
+                <div class="service-icon-large">📹</div>
+                <h3>Medienverleih</h3>
+                <p>Von Kameras über Tablets bis hin zu VR-Brillen – leihen Sie professionelle Technik für Ihren Unterricht.</p>
+                <div class="service-features">
+                    <span class="tag">Tablets</span>
+                    <span class="tag">Kameras</span>
+                    <span class="tag">Audio</span>
+                    <span class="tag">VR</span>
+                </div>
+                <a href="{{ "verleih" | relURL }}" class="btn btn-outline">Zum Verleih</a>
+            </div>
+
+            <div class="service-card-modern highlight">
+                <div class="popular-badge">Beliebt</div>
+                <div class="service-icon-large">🔬</div>
+                <h3>MINT-Space</h3>
+                <p>Unser Makerspace mit 3D-Druckern, Lasercutter und Robotik für praktische MINT-Projekte.</p>
+                <div class="service-features">
+                    <span class="tag">3D-Druck</span>
+                    <span class="tag">Lasercutter</span>
+                    <span class="tag">Robotik</span>
+                    <span class="tag">Coding</span>
+                </div>
+                <a href="{{ "mint-space" | relURL }}" class="btn btn-primary">MINT-Space entdecken</a>
+            </div>
+
+            <div class="service-card-modern">
+                <div class="service-icon-large">💬</div>
+                <h3>Beratung</h3>
+                <p>Persönliche Beratung zu digitalen Medien, Medienkonzepten und technischer Ausstattung.</p>
+                <div class="service-features">
+                    <span class="tag">Medienkonzepte</span>
+                    <span class="tag">Technik</span>
+                    <span class="tag">Didaktik</span>
+                </div>
+                <a href="#kontakt" class="btn btn-outline">Kontakt</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog-modern">
+    <div class="container">
+        <div class="section-header-split">
+            <div>
+                <span class="section-badge">News & Updates</span>
+                <h2>Aktuelles aus dem Medienzentrum</h2>
+            </div>
+            <a href="{{ "blog" | relURL }}" class="btn btn-outline">Alle Beiträge</a>
+        </div>
+
+        <div class="blog-grid-modern">
+            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+            <article class="blog-card-modern">
+                <div class="blog-card-image">
+                    <div class="blog-gradient"></div>
+                    <span class="blog-category">News</span>
+                </div>
+                <div class="blog-card-body">
+                    <time class="blog-date">{{ .Date.Format "02. Januar 2006" }}</time>
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Summary }}</p>
+                    <a href="{{ .Permalink }}" class="blog-link">
+                        Artikel lesen
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Bereit für digitalen Unterricht?</h2>
+            <p>Starten Sie jetzt mit unseren digitalen Medien und Fortbildungen</p>
+            <div class="cta-buttons">
+                <a href="https://hessen.edupool.de/home?standort=16" class="btn btn-primary btn-large" target="_blank">Jetzt loslegen</a>
+                <a href="{{ "fortbildungen" | relURL }}" class="btn btn-secondary btn-large">Fortbildung buchen</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
